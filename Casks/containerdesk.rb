@@ -14,7 +14,6 @@ cask "containerdesk" do
   caveats <<~EOS
     ContainerDesk is ad-hoc signed. If macOS blocks the first launch, run:
       xattr -dr com.apple.quarantine /Applications/ContainerDesk.app
-    or install with: brew install --cask --no-quarantine containerdesk
 
     Requires the container CLI: brew install container
   EOS
