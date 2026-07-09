@@ -1,6 +1,6 @@
 cask "containerdesk" do
-  version "1.0.0"
-  sha256 "a4a180c7b44e388af48e819129ff707c7603190beab6c9c1b21556902fe6e6fb"
+  version "1.0.1"
+  sha256 "b737555c12a5e91fbf9b1c9353b76df0b407e7d3ccdfbda5baa9bcc834b8c42b"
 
   url "https://github.com/seongilp/ContainerDesk/releases/download/v#{version}/ContainerDesk-#{version}.dmg"
   name "ContainerDesk"
@@ -12,9 +12,6 @@ cask "containerdesk" do
   app "ContainerDesk.app"
 
   caveats <<~EOS
-    ContainerDesk is ad-hoc signed. If macOS blocks the first launch, run:
-      xattr -dr com.apple.quarantine /Applications/ContainerDesk.app
-
     Requires the container CLI: brew install container
   EOS
 end
