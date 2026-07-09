@@ -1,6 +1,6 @@
 cask "vpdf" do
   version "1.0.0"
-  sha256 "bcd433b4756687ab0d8451c123b153148f11671060da6c56f835ef60967f616a"
+  sha256 "39af651e1e81e8725916c385d8e815f9b3e3c88e5a35e07155ce782f47d1a586"
 
   url "https://github.com/seongilp/vpdf/releases/download/v#{version}/vpdf-#{version}.dmg"
   name "vpdf"
