@@ -7,8 +7,6 @@ cask "vpdf" do
   desc "Fast native macOS PDF viewer built with AppKit and PDFKit"
   homepage "https://github.com/seongilp/vpdf"
 
-  depends_on macos: ">= :ventura"
-
   app "vpdf.app"
 
   zap trash: [
