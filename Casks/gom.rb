@@ -1,6 +1,6 @@
 cask "gom" do
-  version "1.2.1"
-  sha256 "3387c35e83a333dca14c1fb7323ad2c636a4c8346155c621e01194d5adbae0c6"
+  version "1.3.0"
+  sha256 "bc1dfe985392d157417364fb2b776daa37b831c9fd5179716aa589863336c285"
 
   url "https://github.com/seongilp/gom/releases/download/v#{version}/Gom-#{version}.dmg"
   name "Gom"
