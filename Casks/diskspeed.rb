@@ -1,6 +1,6 @@
 cask "diskspeed" do
-  version "1.0.0"
-  sha256 "aa923f8cf5b5cb4b0ad9178fb7c209263243bde686ed6b096c94cc5a585ab356"
+  version "1.0.1"
+  sha256 "9314952b70a0e7a473d48a31178e2a046f9b76d6d8d2bc27c2959d198fce2515"
 
   url "https://github.com/seongilp/diskspeed/releases/download/v#{version}/diskspeed-#{version}.dmg"
   name "diskspeed"
