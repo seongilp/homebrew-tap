@@ -7,7 +7,7 @@ cask "containerdesk" do
   desc "Docker Desktop-style GUI for Apple Container"
   homepage "https://github.com/seongilp/ContainerDesk"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "ContainerDesk.app"
 

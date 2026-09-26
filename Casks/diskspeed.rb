@@ -7,7 +7,7 @@ cask "diskspeed" do
   desc "Disk benchmark for internal, external, and network drives"
   homepage "https://github.com/seongilp/diskspeed"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "diskspeed.app"
 
