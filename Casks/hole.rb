@@ -7,7 +7,7 @@ cask "hole" do
   desc "Pi-hole style ad-blocking DNS sinkhole in the menu bar"
   homepage "https://github.com/seongilp/hole"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Hole.app"
 
