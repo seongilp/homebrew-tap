@@ -1,6 +1,6 @@
 cask "hole" do
-  version "1.0.0"
-  sha256 "55e0ca45d4b6832403d073238d6f83e9e38fc8ea26b5d0ffc8cca5c1f122c69d"
+  version "1.0.1"
+  sha256 "0d01d564d7efdeaf42277dbdace1c7309b5f3a609294d58235366a93e58d2d47"
 
   url "https://github.com/seongilp/hole/releases/download/v#{version}/Hole-#{version}.dmg"
   name "Hole"
@@ -20,7 +20,10 @@ cask "hole" do
   ]
 
   caveats <<~EOS
-    Hole runs a DNS server on port 53. To start blocking, point macOS DNS at it:
+    Open Hole once from /Applications and approve the "downloaded from the
+    Internet" prompt. macOS holds the bundled DNS server until you do.
+
+    When the shield appears in the menu bar, point macOS DNS at Hole:
       networksetup -setdnsservers Wi-Fi 127.0.0.1
 
     Before quitting or uninstalling Hole, restore DNS or you will lose internet:
