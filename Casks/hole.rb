@@ -1,6 +1,6 @@
 cask "hole" do
-  version "1.0.2"
-  sha256 "021052682d90bbd06bdbd459b76f510dddb0e966875fe5bc0fd4771b3962a3a6"
+  version "1.1.0"
+  sha256 "3f77eeff7b0e071cb75d88dcc22d94e4e1a4564979f04e83152197f41e4a1a14"
 
   url "https://github.com/seongilp/hole/releases/download/v#{version}/Hole-#{version}.dmg"
   name "Hole"
@@ -10,6 +10,7 @@ cask "hole" do
   depends_on macos: :ventura
 
   app "Hole.app"
+  binary "#{appdir}/Hole.app/Contents/MacOS/hole-server", target: "hole"
 
   uninstall quit: "com.zihado.Hole"
 
@@ -23,11 +24,11 @@ cask "hole" do
     Open Hole once from /Applications and approve the "downloaded from the
     Internet" prompt. macOS holds the bundled DNS server until you do.
 
-    When the shield appears in the menu bar, point macOS DNS at Hole:
-      networksetup -setdnsservers Wi-Fi 127.0.0.1
+    Then turn on "이 Mac의 DNS를 Hole로 지정" in the menu bar shield.
+    Hole restores your previous DNS when it quits or its server stops.
 
-    Before quitting or uninstalling Hole, restore DNS or you will lose internet:
-      networksetup -setdnsservers Wi-Fi empty
+    Ads still showing? Run:
+      hole doctor
 
     Dashboard: http://127.0.0.1:4653
   EOS
