@@ -1,6 +1,6 @@
 cask "hole" do
-  version "1.1.1"
-  sha256 "1dc76f85eb56c159eafd291c68abafc0600a70811bd10a1271e9a2a9e14c0da6"
+  version "1.1.2"
+  sha256 "0f111b496afb4374e260e957a3eca67fb4d2023c1a63d31f28a6930ee7be1919"
 
   url "https://github.com/seongilp/hole/releases/download/v#{version}/Hole-#{version}.dmg"
   name "Hole"
