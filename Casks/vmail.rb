@@ -1,6 +1,6 @@
 cask "vmail" do
-  version "1.0.1"
-  sha256 "7d9fc253286de84c6f6dfa7366709418395b62591a768498206724ee6c642ea5"
+  version "1.0.2"
+  sha256 "fde88d53473128658577ec0d4f39e9f7772474dc33a40a71cdf322831d340088"
 
   url "https://github.com/seongilp/vmail/releases/download/v#{version}/vmail-#{version}.dmg"
   name "vmail"
