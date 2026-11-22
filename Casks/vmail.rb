@@ -7,7 +7,7 @@ cask "vmail" do
   desc "Fast, lightweight native mail client"
   homepage "https://github.com/seongilp/vmail"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "vmail.app"
 
